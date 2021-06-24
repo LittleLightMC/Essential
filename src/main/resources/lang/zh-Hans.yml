@@ -1,0 +1,8 @@
+text addon loaded: "基础模块已加载"
+info addon version:
+  ==: XML
+  text: |
+    <rainbow:2>||||||||||||||||||||||||</rainbow>
+    <underlined>目前基础模块版本为<bold>${plugin_version}</bold>。</underlined>
+    <gradient:#5e4fa2:#f79459:red>||||||||||||||||||||||||</gradient>
+error no permission: "&c你不能使用这个指令。"

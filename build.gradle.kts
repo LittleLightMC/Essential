@@ -3,7 +3,7 @@ plugins {
     kotlin("jvm") version "1.5.10"
 }
 
-group = "pro.darc.cake.addon"
+group = "com.github.littlelightmc.essential"
 version = "0.1.0"
 
 repositories {
@@ -29,9 +29,15 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT")
-    implementation("pro.darc.cake", "cakeapi", "0.1.2")
+    implementation("pro.darc.cake", "cakeapi", "0.1.13")
+    compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
 }
 
+
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+    kotlinOptions.jvmTarget = "16"
+    kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.time.ExperimentalTime,kotlin.ExperimentalStdlibApi,kotlinx.coroutines.ExperimentalCoroutinesApi,kotlin.RequiresOptIn"
+}
 
 tasks.processResources {
     expand(
