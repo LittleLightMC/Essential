@@ -1,0 +1,4 @@
+name: ${plugin_name}
+version: ${plugin_version}
+main: ${plugin_main_path}
+id: af6bf111-d349-4d18-8433-eb926dae96c9
