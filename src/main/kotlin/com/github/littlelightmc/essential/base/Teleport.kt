@@ -5,7 +5,6 @@ import pro.darc.cake.core.inject.LifeInject
 import pro.darc.cake.module.command.arguments.coordinate
 import pro.darc.cake.module.command.arguments.player
 import pro.darc.cake.module.command.command
-import pro.darc.cake.module.command.fail
 import pro.darc.cake.module.command.failLocale
 import pro.darc.cake.module.extensions.cake
 import pro.darc.cake.module.extensions.hasPermissionOrStar
