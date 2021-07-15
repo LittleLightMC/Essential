@@ -1,6 +1,7 @@
 
 plugins {
     kotlin("jvm") version "1.5.10"
+    kotlin("plugin.serialization") version "1.5.20"
 }
 
 group = "com.github.littlelightmc.essential"
@@ -27,10 +28,14 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib"))
-    implementation("org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT")
-    implementation("pro.darc.cake", "cakeapi", "0.1.15")
+    compileOnly(kotlin("stdlib"))
+    compileOnly("org.spigotmc:spigot-api:1.17-R0.1-SNAPSHOT")
+    compileOnly("pro.darc.cake", "cakeapi", "0.1.22")
     compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
+    compileOnly("org.redisson:redisson:3.16.0")
+    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.1")
+    compileOnly("org.litote.kmongo:kmongo-id:4.2.8")
+    compileOnly("org.litote.kmongo:kmongo-coroutine-serialization:4.2.8")
 }
 
 

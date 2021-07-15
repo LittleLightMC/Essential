@@ -1,4 +1,13 @@
 text addon loaded: "基础模块已加载"
+
+text command team help:
+  ==: XML
+  text: |
+    <rainbow:2>==========火力战队=========</rainbow>
+    指令别名：<underlined><click:suggest_command:/火力战队>/火力战队</click></underlined> <underlined><click:suggest_command:/fireteam>/fireteam</click></underlined>
+    <gray>点击下方黄色文本 可以快速填充指令</gray>
+    <yellow><click:suggest_command:/火力战队 邀请>邀请玩家到火力战队</click>
+
 info addon version:
   ==: XML
   text: |
@@ -6,3 +15,12 @@ info addon version:
     <underlined>目前基础模块版本为<bold>${plugin_version}</bold>。</underlined>
     <gradient:#5e4fa2:#f79459:red>||||||||||||||||||||||||</gradient>
 error no permission: "&c你不能使用这个指令。"
+
+text input player name: "&a请输入玩家名称"
+text timeout: "&c操作已超时"
+
+team menu:
+  invite:
+    title: "&5火力战队邀请"
+    button:
+      input name: "&7手动输入"
